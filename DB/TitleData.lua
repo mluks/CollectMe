@@ -3763,8 +3763,32 @@ if UnitFactionGroup("player") == "Horde" then
             tmp = false,
         },
     } -- Worgen Hunter
+    Data.Titles[516] = {
+        id      = 516,
+        name    = GetTitleName(516):gsub("^%s*(.-)%s*$", "%1"),
+        filters = {
+            umo = false,
+            pvp = false,
+            are = false,
+            nlo = false,
+            tmp = false,
+        },
+    } -- Demonslayer
+    Data.Titles[515] = {
+        id      = 515,
+        name    = GetTitleName(98):gsub("^%s*(.-)%s*$", "%1"),
+        filters = {
+            umo = false,
+            pvp = false,
+            are = false,
+            nlo = false,
+            tmp = false,
+        },
+    } -- Lightbringer
 end
 
+table.insert(Data.TitlesSort, 516)
+table.insert(Data.TitlesSort, 515)
 table.insert(Data.TitlesSort, 98)
 table.insert(Data.TitlesSort, 327)
 table.insert(Data.TitlesSort, 260)
